@@ -1,0 +1,146 @@
+:root
+{
+	--clr-bg:hsl(323 21% 16%);
+}
+*::before,
+*::after
+{
+
+	
+}
+body
+{
+	background: var(--clr-bg);
+	color:white;
+	width:100vw;
+}
+.headerBasket
+{
+	padding-bottom:5rem;
+}
+.content
+{
+	max-width: 900px;
+    margin:  auto;
+    padding: 5px;
+}
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .20em .20em;
+    cursor: pointer;
+}
+.btn-normal
+{
+    color: #333;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-normal:hover {
+    background-color: #2D9CDB;
+}
+.sectionHeader
+{
+	padding-top:7px;
+    font-family:  'Fjalla One', sans-serif;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+	border-top: dashed 1px black;
+}
+.cartColumn
+{
+	display: flex;
+    align-items: center;
+    background-color: black;
+	padding-left:10px;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+	text-align: center;
+}
+.cartRow
+{
+	display: flex;
+	color:white;
+}
+.cartItem
+{
+	width: 45%;
+	color: white;
+}
+.cartPrice
+{
+	width: 20%;
+    font-size: 2em;
+    color: white;
+}
+.cartQuantity
+{
+	width: 35%;
+}
+.cartRow:last-child {
+    border-bottom: 1px ;
+}
+.cartRow:last-child .cart-column {
+    border: dotted;
+}
+.cartTotal
+{
+	text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+	border-bottom: dashed 1px black;
+}
+.Total
+{
+	font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+}
+.cartHowMuch
+{
+	color: white;
+    font-size: 1.1em;
+	margin-right: 15px;
+}
+.btn-purchase
+{
+	display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.15em;
+}
+.cartItemFoto {
+    width: 75px;
+    height: auto;
+    border-radius: 400px;
+}
+.cartItemTitle {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cartQuantityInput {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 25px;
+	
+}
+.btnDelete {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}

@@ -1,0 +1,148 @@
+
+
+
+.shopItem
+{
+    margin: 30px;
+    border: #201D2D solid 0.2rem;
+    border-radius: 10%;
+    box-shadow: 0 0 2em  #2D2844 ;
+    transition: box-shadow .7s;
+}
+.shopItem:hover
+{
+    box-shadow: 0 0 2em  #201D2D ; 
+}
+.shopItems
+{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	width: 100%;
+    
+}
+.shopItemTitle
+{
+	display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 15px;
+}
+.shopItemFoto
+{
+	width:auto;
+	height:250px;
+}
+
+.shopItemDetails 
+{
+	display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.shopItemPrice
+{
+	flex-grow: 1;
+    color: white;
+    font-size: 1.3rem;
+}
+.content
+{
+	max-width: 900px;
+    margin:  auto;
+    padding: 5px;
+}
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .20em .20em;
+    cursor: pointer;
+}
+.btn-normal
+{
+    color: #333;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-normal:hover {
+    background-color: #2D9CDB;
+}
+.sectionHeader
+{
+	padding-top:7px;
+    font-family:  'Fjalla One', sans-serif;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+	border-top: dashed 1px black;
+}
+.cartColumn
+{
+	display: flex;
+    align-items: center;
+    background-color: #472E3E;
+	padding-left:10px;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+	text-align: center;
+}
+.cartRow
+{
+	text-align: center;
+	color: white;
+}
+.cartItem
+{
+    
+	width: 45%;
+	color: white;
+}
+.cartPrice
+{
+	width: 20%;
+    font-size: 1.2em;
+    color: white;
+}
+.cartQuantity
+{
+	width: 35%;
+}
+.cartRow:last-child {
+    border-bottom: 1px ;
+}
+.cartRow:last-child .cart-column {
+    border: dotted;
+}
+.cartTotal
+{
+	text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+	border-bottom: dashed 1px black;
+}
+.Total
+{
+	font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+}
+.cartHowMuch
+{
+	color: white;
+    font-size: 1.1em;
+	margin-right: 15px;
+}
+.btn-purchase
+{
+	display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.15em;
+}

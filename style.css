@@ -1,0 +1,278 @@
+
+:root
+{
+	--clr-bg:hsl(323 21% 16%);
+}
+*::before,
+*::after
+{
+	box-sizing: border-box;
+}
+body
+{
+	background: var(--clr-bg);
+	color:white;
+	width:100vw;
+}
+.button
+{
+	position:fixed;
+	right:4vw;
+	bottom:20vh;
+	width:3vw;
+	height:4vh;
+
+	
+}
+
+.socials
+{
+	height:15vh;
+	width:100vw;
+
+
+}
+.fb
+{
+	height:15vh;
+	width:15vw;
+	margin-left:18vw;
+	float:left;
+	transition: background-color 1s;
+	margin-right:1vw;
+	
+}
+.fb:hover
+{
+	height:15vh;
+	width:15vw;
+	margin-left:18vw;
+	float:left;
+	background-color:#4267B2;
+
+	
+	
+}
+.ig
+{
+	height:15vh;
+	width:15vw;
+	float:left;
+	
+	margin-right:1vw;
+	transition: background-color 1s;
+}
+.ig:hover
+{
+	height:15vh;
+	width:15vw;
+	float:left;
+	background-color:#405DE6;
+	
+	
+}
+.tweet
+{
+	height:15vh;
+	width:15vw;
+	float:left;
+	
+	margin-right:1vw;
+	transition: background-color 1s;
+	
+}
+.tweet:hover
+{
+	height:15vh;
+	width:15vw;
+	float:left;
+	background-color:#1DA1F2;
+
+}
+.gmail
+
+{
+	height:15vh;
+	width:15vw;
+	margin-right:18vw;
+	float:left;
+	transition: background-color 1s;
+	
+}
+.gmail:hover
+{
+	height:15vh;
+	width:15vw;
+	margin-right:18vw;
+	float:left;
+	background-color:#c71610;
+	
+}
+
+.basket:hover 
+{
+filter: brightness(100%);
+width:3vw;
+height:6vh;
+cursor:pointer;
+transform: rotate(-15deg);
+
+}
+
+
+input 
+	{
+   float: left;
+   color: black;
+   vertical-align: baseline;
+	}
+
+input[type=text] 
+{
+	
+   font: 1em Arial, Sans-serif;
+   border: 2px solid black;
+   border-width: 0 0 3px;
+   background-color: transparent;
+   padding: .1875em .375em;
+   width: 80vw;
+}
+input[type=text]:focus 
+{
+   outline: 0;
+   border-color: black;
+   color: black;
+}
+.container
+{
+	width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	padding-top: 3vh; 
+	
+	
+	
+}
+
+.neon
+{
+	text-decoration:none;
+	border-radius:0.25em;
+	text-shadow: 0 0 0.1em #2D2844  ,0 0 0.1em;
+	box-shadow: 0 0 0.3em 0 #2D2844 , inset 0 0 0.4em 0 #2D2844 ;
+	border:#2D2844  0.05em solid;
+	position:relative;
+	padding: 0.25em;
+	
+}
+.neon::before
+{
+	content: '';
+	position: absolute;
+	background: #2D2844 ;
+	top:120%;
+	left:0;
+	width:100%;
+	height:100%;
+	filter:blur(6em);
+	transform: perspective(1.7em) rotateX(40deg) translateZ(0.7em) scale(1, 0.35);
+	opacity:0.8;
+	
+	
+}
+.header
+{
+text-align:center;	
+margin:1vh;
+font-size:10vh;
+color:white;
+font-family: 'Fjalla One', sans-serif;
+padding:2vh;
+width:100vw;
+padding-bottom:5rem;
+
+}
+
+	.nav
+	{
+		width:100vw;
+		padding:0.5rem ;
+		padding-bottom:1.7rem;
+		background-color:#c34f4f;
+		text-align: center;
+		border-top: 0.3vh solid #751b1b;
+		border-bottom: 0.3vh solid #751b1b;
+		
+		
+
+		
+	}
+	.sticky
+	{
+		position:fixed;
+		left:0;
+		top:0;
+		z-index:100;
+	}
+ol
+{
+	
+	margin: 0.2vh;
+	list-style-type: none;
+	font-size: 3vh;
+	height:3.5vh;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	
+}
+
+ol > li
+{
+	float: left;
+	width: 8vw;
+	height: 4vh;
+	border-right: 1vw continuous #751b1b;
+}
+ol > li:hover > a
+{
+	color: #451717;
+}
+
+ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 3.5vh;
+	display: none;
+}
+
+ol > li:hover > ul
+{
+display: block;
+}
+ol > li > ul > li
+{
+	background-color: #cf6969;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #751b1b;
+	
+}
+ol > li > ul > li:hover
+{
+	background-color: #c34f4f;
+}
+
+ol > li > ul > li:hover > a
+{
+	color: #451717;
+}

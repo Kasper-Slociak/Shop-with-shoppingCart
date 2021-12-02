@@ -1,0 +1,260 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Kasper Slociak</title>
+        <meta name="keywords" content="JavaScript, CSS, HTML, Front-end, Front-end Web Developer, Web Developer, Portfolio">
+        <meta name="description" content="Hey my name is Kasper Słociak, I'm a young IT technican passionate in programming especially the front-end web developing. This is my protfolio and I would like to introduce myself to the best of it">
+        <meta name="author" content="Kasper Słociak">
+        
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_basket.css">
+        <link rel="stylesheet" href="style_items.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    
+        <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
+        <script src="basket.js"></script>
+        
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <![endif]-->
+        
+        
+        </head>
+</head>
+
+<body>
+    <div class="header" id="header">
+		<a class="neon" href"">Shop Land</a>
+	</div>
+	
+
+
+
+		<div class="nav" id="nav">
+			 <ol>
+	 
+
+	 <li>
+	
+	
+	 </li>
+
+	
+	 
+	 <li><a href="#">Alcohols</a>
+		<ul>
+		<li><a href="#">Beer</a></li>
+		<li><a href="#">High-proof alcohols</a></li>
+		</ul>
+	 </li>
+	 <li><a href="#"></a></li>
+	 <li><a href="#">Groceries</a>
+		<ul>
+		<li><a href="#">Bread</a></li>
+		<li><a href="#">Dairy</a></li>
+		<li><a href="#">Canned food</a></li>
+		<li><a href="#">Snacks</a></li>
+		<li><a href="#">Drinkables</a></li>
+		<li><a href="#">Meat</a></li>
+		<li><a href="#">Fish</a></li>
+		<li><a href="#">Fruits and vegetables</a></li>
+		<li><a href="#">Candys</a></li>
+		</ul>
+	 </li>
+	 <li><a href="#"></a></li>
+	 <li><a href="#">Detergents</a>
+		<ul>
+		<li><a href="#">Personal hygiene</a></li>
+		<li><a href="#">For cleaning</a></li>
+		<li><a href="#">Anothers</a></li>
+		</ul>
+	 </li>
+	 <li><a href="#"></a></li>
+	 <li><a href="#">Cigarettes</a>
+	 <li><a href="#"></a></li>
+	
+	 </li>
+	 
+  
+    
+	 </ol>
+	
+		</div>
+		
+	<div class="container" id="container">
+		
+		<div class="main" id="main">
+		<a class="button"><i class="icon-up-open"></i></a>
+		<section class="content">
+		<div class="shopItems">
+            
+            <div class="shopItem">
+                <span class="shopItemTitle">Bread</span>
+                <img class="shopItemFoto" src="chleb3.png">
+                <div class="shopItemDetails">
+                    <span class="shopItemPrice"> 2.25&#xFE69;</span>
+                    <button class="btn btn-normal shopItemBtn" type="button" onclick="">Add to cart </button>
+                </div>
+            </div>
+		
+		
+                <div class="shopItem">
+                    <span class="shopItemTitle">Doritos</span>
+                    <img class="shopItemFoto" src="doritosb.png">
+                    <div class="shopItemDetails">
+                        <span class="shopItemPrice"> 4&#xFE69;</span>
+                        <button class="btn btn-normal shopItemBtn" type="button" onclick="">Add to cart </button>
+                    </div>
+            </div>
+
+      
+ 
+       
+			
+			
+		
+		
+	
+	
+		</div>
+		
+		</section>
+		
+		
+		
+		
+		
+		</div>
+
+        <div class="headerBasket" id="headerBasket">
+    
+        </div>
+        
+        <section class="content sectionCart">
+                <h2 class="sectionHeader">Shopping Cart</h2>
+                <div class="cartRow">
+                <span class="cartItem cartHeader cartColumn">Purchase</span>
+                <span class="cartPrice cartHeader cartColumn">Price</span>
+                <span class="cartQuantity cartHeader cartColumn">Quantity</span>
+                </div>
+                
+                <div class="cartItems">
+                
+                </div>
+                
+                <div class="cartTotal">
+                <strong class="Total">Total: </strong>
+                <span class="cartHowMuch">0</span>
+                </div>
+                <button class="btn btn-normal btn-purchase" type="button"<a href="" style="text-decoration: none;">Buy now!</a></button>
+                </section>
+            
+        
+           
+	
+		
+		
+	<div class="socials" id="socials">
+		
+		<div class="fb" id="fb">
+		<i class="icon-facebook"></i>
+		</div>
+		<div class="ig" id="ig">
+		<i class="icon-instagram"></i>
+		</div>
+		<div class="tweet" id="tweet">
+		<i class="icon-twitter"></i>
+		</div>
+		<div class="gmail" id="gmail">
+		<i class="icon-google"></i>
+		</div>
+
+	</div>
+
+
+	
+	
+	</div>
+
+    
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>$(document).ready(function() {
+		var NavY= $('.nav').offset().top;
+		
+		var Sticky = function(){
+			var ScrollY= $(window).scrollTop();
+			
+			if(ScrollY>NavY)
+			{
+				$('.nav').addClass('sticky');
+			}
+			else
+			{
+				$('.nav').removeClass('sticky');
+			}
+		};
+		Sticky();
+		
+		$(window).scroll(function(){
+			Sticky();
+		});
+		
+		
+
+  
+  var btn = $('.icon-up-open');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > NavY) {
+      btn.addClass('icon-up-open');
+    } 
+	else {
+      btn.removeClass('icon-up-open');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '400');
+  });
+	
+
+	
+		});
+
+        </script>
+
+    </body>
+</html>
